@@ -1,0 +1,608 @@
+﻿
+
+@{
+    ViewBag.Title = "Afisolustur";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">AFİŞ OLUŞTUR</h2>
+            <h3 class="section-subheading text-muted">Kendi afişinizi oluşturmak çok kolay.</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 1-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/7.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    @Html.DropDownList("kategoriler",new List<SelectListItem>
+                                               { new SelectListItem
+                                               { Text="Broşür Dağıtım",
+                                               Value="1",
+                                                   },
+                                                   new SelectListItem{
+                                                       Text="broşür baskı",
+                                               Value="2",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="E Ticaret Danışmanı",
+                                                       Value="3",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="Web Tasarım",
+                                                       Value="4",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="Yazılım Geliştirme",
+                                                       Value="5",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="Mobil Uygulama Geliştirme",
+                                                       Value="6",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="Grafik Tasarım",
+                                                       Value="7",
+                                                   },
+                                                   new SelectListItem
+                                                   {
+                                                       Text="Video Editörü",
+                                                       Value="8",
+                                                   },
+                                                  
+                                               },"kategori seçiniz")
+
+
+                                               
+
+                                                    @*<fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>*@
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 2-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/8.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    <fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/7.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    <fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <!-- Portfolio item 4-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/8.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    <fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <!-- Portfolio item 5-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/7.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="/assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    <fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <!-- Portfolio item 6-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="/assets/img/portfolio/8.png" alt="..." />
+                    </a>
+                    <div class="portfolio-caption">
+
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <div class="modal-body">
+                                        <!-- Project details-->
+                                        <h2 class="text-uppercase">AFİŞ OLUŞTUR</h2>
+
+
+                                        <table align="center">
+
+                                            <tr>
+                                                <td>
+                                                    <input id="Text1" type="text" placeholder="Başlık" />
+                                                </td>
+                                            <tr>
+                                                <td>
+                                                    <fieldset>Kategoriler <select id="Kategori" name="Kategori" /></fieldset>
+                                                </td>
+                                                @*<td>
+                                                <input id="Text2" type="text" placeholder="Kategori" />
+                                            </td>*@
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input id="Text2" type="text" placeholder="Kategori ekle" />
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        EKLE
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <textarea id="TextArea2" cols="20" rows="4" placeholder="Açıklama"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <input type="file" name="uploadfile" id="img" style="display:none;" />
+                                                    <i class='fa fa-camera'></i>
+                                                    <label for="img">Fotoğraf Yükle.</label>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <div class="input-container">
+
+                                                        <i class='fab fa-whatsapp'></i> <input class="input-field" type="text" placeholder="WhatsApp İletişim.">
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>
+                                                    <button class="btn btn-primaryy btn-sm text-uppercase" data-bs-dismiss="modal" type="button">
+                                                        <i class='fa fa-check'></i>
+                                                        Afişi Oluştur
+                                                    </button>
+                                                </td>
+                                            </tr>
+
+
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
